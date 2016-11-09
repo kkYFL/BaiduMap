@@ -1,0 +1,5 @@
+   
+target 'YFLBaiduMap' do
+pod 'BaiduMapKit'
+end
+xcodeproj '/Users/yangfenglin/Desktop/Map/BaiduMap/YFLBaiduMap/YFLBaiduMap.xcodeproj'
