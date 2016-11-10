@@ -8,13 +8,21 @@
 
 /* Begin PBXBuildFile section */
 		3A7D5A231DD3154700EA1FD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D5A221DD3154700EA1FD6 /* main.m */; };
-		3A7D5A261DD3154700EA1FD6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D5A251DD3154700EA1FD6 /* AppDelegate.m */; };
+		3A7D5A261DD3154700EA1FD6 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D5A251DD3154700EA1FD6 /* AppDelegate.mm */; };
 		3A7D5A291DD3154700EA1FD6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D5A281DD3154700EA1FD6 /* ViewController.m */; };
-		3A7D5A2C1DD3154700EA1FD6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7D5A2A1DD3154700EA1FD6 /* Main.storyboard */; };
 		3A7D5A2E1DD3154700EA1FD6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A7D5A2D1DD3154700EA1FD6 /* Assets.xcassets */; };
-		3A7D5A311DD3154700EA1FD6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A7D5A2F1DD3154700EA1FD6 /* LaunchScreen.storyboard */; };
 		3A7D5A3C1DD3154700EA1FD6 /* YFLBaiduMapTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D5A3B1DD3154700EA1FD6 /* YFLBaiduMapTests.m */; };
 		3A7D5A471DD3154700EA1FD6 /* YFLBaiduMapUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D5A461DD3154700EA1FD6 /* YFLBaiduMapUITests.m */; };
+		3A7D5A551DD33C6500EA1FD6 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7D5A541DD33C6500EA1FD6 /* CoreLocation.framework */; };
+		3A7D5A571DD33C7700EA1FD6 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7D5A561DD33C7700EA1FD6 /* QuartzCore.framework */; };
+		3A7D5A591DD33C8500EA1FD6 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7D5A581DD33C8500EA1FD6 /* OpenGLES.framework */; };
+		3A7D5A5B1DD33C9100EA1FD6 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7D5A5A1DD33C9100EA1FD6 /* SystemConfiguration.framework */; };
+		3A7D5A5D1DD33C9D00EA1FD6 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7D5A5C1DD33C9D00EA1FD6 /* CoreGraphics.framework */; };
+		3A7D5A5F1DD33CA800EA1FD6 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7D5A5E1DD33CA800EA1FD6 /* Security.framework */; };
+		3A7D5A611DD33CC900EA1FD6 /* libsqlite3.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7D5A601DD33CC900EA1FD6 /* libsqlite3.0.tbd */; };
+		3A7D5A631DD33CD800EA1FD6 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7D5A621DD33CD800EA1FD6 /* CoreTelephony.framework */; };
+		3A7D5A651DD33CEB00EA1FD6 /* libstdc++.6.0.9.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7D5A641DD33CEB00EA1FD6 /* libstdc++.6.0.9.tbd */; };
+		3A7D5A671DD33E4900EA1FD6 /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 3A7D5A661DD33E4900EA1FD6 /* mapapi.bundle */; };
 		CC76CC22EE7E44F03F4D9EBB /* libPods-YFLBaiduMap.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 21ADE741D38DC5633272BBA0 /* libPods-YFLBaiduMap.a */; };
 /* End PBXBuildFile section */
 
@@ -40,12 +48,10 @@
 		3A7D5A1E1DD3154700EA1FD6 /* YFLBaiduMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFLBaiduMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7D5A221DD3154700EA1FD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3A7D5A241DD3154700EA1FD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		3A7D5A251DD3154700EA1FD6 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		3A7D5A251DD3154700EA1FD6 /* AppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = AppDelegate.mm; sourceTree = "<group>"; };
 		3A7D5A271DD3154700EA1FD6 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		3A7D5A281DD3154700EA1FD6 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		3A7D5A2B1DD3154700EA1FD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A7D5A2D1DD3154700EA1FD6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3A7D5A301DD3154700EA1FD6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A7D5A321DD3154700EA1FD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A7D5A371DD3154700EA1FD6 /* YFLBaiduMapTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFLBaiduMapTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7D5A3B1DD3154700EA1FD6 /* YFLBaiduMapTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLBaiduMapTests.m; sourceTree = "<group>"; };
@@ -53,6 +59,17 @@
 		3A7D5A421DD3154700EA1FD6 /* YFLBaiduMapUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = YFLBaiduMapUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7D5A461DD3154700EA1FD6 /* YFLBaiduMapUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YFLBaiduMapUITests.m; sourceTree = "<group>"; };
 		3A7D5A481DD3154700EA1FD6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A7D5A541DD33C6500EA1FD6 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3A7D5A561DD33C7700EA1FD6 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		3A7D5A581DD33C8500EA1FD6 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		3A7D5A5A1DD33C9100EA1FD6 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		3A7D5A5C1DD33C9D00EA1FD6 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		3A7D5A5E1DD33CA800EA1FD6 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		3A7D5A601DD33CC900EA1FD6 /* libsqlite3.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.0.tbd; path = usr/lib/libsqlite3.0.tbd; sourceTree = SDKROOT; };
+		3A7D5A621DD33CD800EA1FD6 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		3A7D5A641DD33CEB00EA1FD6 /* libstdc++.6.0.9.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libstdc++.6.0.9.tbd"; path = "usr/lib/libstdc++.6.0.9.tbd"; sourceTree = SDKROOT; };
+		3A7D5A661DD33E4900EA1FD6 /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = mapapi.bundle; path = ../Pods/BaiduMapKit/BaiduMapKit/BaiduMapAPI_Map.framework/Resources/mapapi.bundle; sourceTree = "<group>"; };
+		3A7D5A691DD344C200EA1FD6 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		D55A58ED6809730091FD7497 /* Pods-YFLBaiduMap.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YFLBaiduMap.release.xcconfig"; path = "../Pods/Target Support Files/Pods-YFLBaiduMap/Pods-YFLBaiduMap.release.xcconfig"; sourceTree = "<group>"; };
 		DB00392886DD64A734F73506 /* Pods-YFLBaiduMap.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YFLBaiduMap.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-YFLBaiduMap/Pods-YFLBaiduMap.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -62,6 +79,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A7D5A651DD33CEB00EA1FD6 /* libstdc++.6.0.9.tbd in Frameworks */,
+				3A7D5A631DD33CD800EA1FD6 /* CoreTelephony.framework in Frameworks */,
+				3A7D5A611DD33CC900EA1FD6 /* libsqlite3.0.tbd in Frameworks */,
+				3A7D5A5F1DD33CA800EA1FD6 /* Security.framework in Frameworks */,
+				3A7D5A5D1DD33C9D00EA1FD6 /* CoreGraphics.framework in Frameworks */,
+				3A7D5A5B1DD33C9100EA1FD6 /* SystemConfiguration.framework in Frameworks */,
+				3A7D5A591DD33C8500EA1FD6 /* OpenGLES.framework in Frameworks */,
+				3A7D5A571DD33C7700EA1FD6 /* QuartzCore.framework in Frameworks */,
+				3A7D5A551DD33C6500EA1FD6 /* CoreLocation.framework in Frameworks */,
 				CC76CC22EE7E44F03F4D9EBB /* libPods-YFLBaiduMap.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -86,6 +112,7 @@
 		3A7D5A151DD3154700EA1FD6 = {
 			isa = PBXGroup;
 			children = (
+				3A7D5A661DD33E4900EA1FD6 /* mapapi.bundle */,
 				3A7D5A201DD3154700EA1FD6 /* YFLBaiduMap */,
 				3A7D5A3A1DD3154700EA1FD6 /* YFLBaiduMapTests */,
 				3A7D5A451DD3154700EA1FD6 /* YFLBaiduMapUITests */,
@@ -109,14 +136,13 @@
 			isa = PBXGroup;
 			children = (
 				3A7D5A241DD3154700EA1FD6 /* AppDelegate.h */,
-				3A7D5A251DD3154700EA1FD6 /* AppDelegate.m */,
+				3A7D5A251DD3154700EA1FD6 /* AppDelegate.mm */,
 				3A7D5A271DD3154700EA1FD6 /* ViewController.h */,
 				3A7D5A281DD3154700EA1FD6 /* ViewController.m */,
-				3A7D5A2A1DD3154700EA1FD6 /* Main.storyboard */,
 				3A7D5A2D1DD3154700EA1FD6 /* Assets.xcassets */,
-				3A7D5A2F1DD3154700EA1FD6 /* LaunchScreen.storyboard */,
 				3A7D5A321DD3154700EA1FD6 /* Info.plist */,
 				3A7D5A211DD3154700EA1FD6 /* Supporting Files */,
+				3A7D5A691DD344C200EA1FD6 /* PrefixHeader.pch */,
 			);
 			path = YFLBaiduMap;
 			sourceTree = "<group>";
@@ -150,6 +176,15 @@
 		CDBC0259629143D48D77E625 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				3A7D5A641DD33CEB00EA1FD6 /* libstdc++.6.0.9.tbd */,
+				3A7D5A621DD33CD800EA1FD6 /* CoreTelephony.framework */,
+				3A7D5A601DD33CC900EA1FD6 /* libsqlite3.0.tbd */,
+				3A7D5A5E1DD33CA800EA1FD6 /* Security.framework */,
+				3A7D5A5C1DD33C9D00EA1FD6 /* CoreGraphics.framework */,
+				3A7D5A5A1DD33C9100EA1FD6 /* SystemConfiguration.framework */,
+				3A7D5A581DD33C8500EA1FD6 /* OpenGLES.framework */,
+				3A7D5A561DD33C7700EA1FD6 /* QuartzCore.framework */,
+				3A7D5A541DD33C6500EA1FD6 /* CoreLocation.framework */,
 				21ADE741D38DC5633272BBA0 /* libPods-YFLBaiduMap.a */,
 			);
 			name = Frameworks;
@@ -274,9 +309,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A7D5A311DD3154700EA1FD6 /* LaunchScreen.storyboard in Resources */,
+				3A7D5A671DD33E4900EA1FD6 /* mapapi.bundle in Resources */,
 				3A7D5A2E1DD3154700EA1FD6 /* Assets.xcassets in Resources */,
-				3A7D5A2C1DD3154700EA1FD6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -350,7 +384,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A7D5A291DD3154700EA1FD6 /* ViewController.m in Sources */,
-				3A7D5A261DD3154700EA1FD6 /* AppDelegate.m in Sources */,
+				3A7D5A261DD3154700EA1FD6 /* AppDelegate.mm in Sources */,
 				3A7D5A231DD3154700EA1FD6 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -385,25 +419,6 @@
 			targetProxy = 3A7D5A431DD3154700EA1FD6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		3A7D5A2A1DD3154700EA1FD6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A7D5A2B1DD3154700EA1FD6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3A7D5A2F1DD3154700EA1FD6 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A7D5A301DD3154700EA1FD6 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		3A7D5A491DD3154700EA1FD6 /* Debug */ = {
@@ -449,6 +464,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -489,6 +505,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-ObjC";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -499,10 +516,14 @@
 			baseConfigurationReference = DB00392886DD64A734F73506 /* Pods-YFLBaiduMap.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				DEVELOPMENT_TEAM = KK5694975F;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YFLBaiduMap/PrefixHeader.pch";
 				INFOPLIST_FILE = YFLBaiduMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = YFL.YFLBaiduMap;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.testmap.yfl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -512,10 +533,14 @@
 			baseConfigurationReference = D55A58ED6809730091FD7497 /* Pods-YFLBaiduMap.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
 				DEVELOPMENT_TEAM = KK5694975F;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/YFLBaiduMap/PrefixHeader.pch";
 				INFOPLIST_FILE = YFLBaiduMap/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = YFL.YFLBaiduMap;
+				PRODUCT_BUNDLE_IDENTIFIER = cn.testmap.yfl;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

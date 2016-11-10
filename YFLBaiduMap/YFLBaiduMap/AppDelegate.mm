@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,28 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+    
+    // 要使用百度地图，请先启动BaiduMapManager
+    _mapManager = [[BMKMapManager alloc]init];
+    // 如果要关注网络及授权验证事件，请设定     generalDelegate参数
+    BOOL ret = [_mapManager start:@"wybZnM7pHjkdNDP3pfExeqe8iA03TkCu"  generalDelegate:nil];
+    if (!ret) {
+        NSLog(@"manager start failed!");
+    }
+    // Add the navigation controller's view to the window and display.
+    
+    self.window=[[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
+    [self.window setBackgroundColor:[UIColor whiteColor]];
+    
+    ViewController *vc=[[ViewController alloc]init];
+    
+    self.navigationController=[[UINavigationController alloc]initWithRootViewController:vc];
+    
+    self.window.rootViewController=self.navigationController;
+    
+    [self.window makeKeyAndVisible];
+    
     return YES;
 }
 
