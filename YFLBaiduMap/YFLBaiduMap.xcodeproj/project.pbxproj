@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A4ABBAB1FAC6BEC00469483 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4ABBAA1FAC6BEC00469483 /* LocationViewController.m */; };
 		3A7D5A231DD3154700EA1FD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D5A221DD3154700EA1FD6 /* main.m */; };
 		3A7D5A261DD3154700EA1FD6 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D5A251DD3154700EA1FD6 /* AppDelegate.mm */; };
 		3A7D5A291DD3154700EA1FD6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D5A281DD3154700EA1FD6 /* ViewController.m */; };
@@ -45,6 +46,8 @@
 
 /* Begin PBXFileReference section */
 		21ADE741D38DC5633272BBA0 /* libPods-YFLBaiduMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YFLBaiduMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A4ABBA91FAC6BEC00469483 /* LocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
+		3A4ABBAA1FAC6BEC00469483 /* LocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		3A7D5A1E1DD3154700EA1FD6 /* YFLBaiduMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFLBaiduMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A7D5A221DD3154700EA1FD6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3A7D5A241DD3154700EA1FD6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -139,6 +142,8 @@
 				3A7D5A251DD3154700EA1FD6 /* AppDelegate.mm */,
 				3A7D5A271DD3154700EA1FD6 /* ViewController.h */,
 				3A7D5A281DD3154700EA1FD6 /* ViewController.m */,
+				3A4ABBA91FAC6BEC00469483 /* LocationViewController.h */,
+				3A4ABBAA1FAC6BEC00469483 /* LocationViewController.m */,
 				3A7D5A2D1DD3154700EA1FD6 /* Assets.xcassets */,
 				3A7D5A321DD3154700EA1FD6 /* Info.plist */,
 				3A7D5A211DD3154700EA1FD6 /* Supporting Files */,
@@ -386,6 +391,7 @@
 				3A7D5A291DD3154700EA1FD6 /* ViewController.m in Sources */,
 				3A7D5A261DD3154700EA1FD6 /* AppDelegate.mm in Sources */,
 				3A7D5A231DD3154700EA1FD6 /* main.m in Sources */,
+				3A4ABBAB1FAC6BEC00469483 /* LocationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -517,14 +523,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KK5694975F;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YFLBaiduMap/PrefixHeader.pch";
 				INFOPLIST_FILE = YFLBaiduMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.testmap.yfl;
+				PRODUCT_BUNDLE_IDENTIFIER = YFL.Test.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -534,14 +543,17 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "LaunchImage-1";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KK5694975F;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YFLBaiduMap/PrefixHeader.pch";
 				INFOPLIST_FILE = YFLBaiduMap/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.4;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = cn.testmap.yfl;
+				PRODUCT_BUNDLE_IDENTIFIER = YFL.Test.com;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};

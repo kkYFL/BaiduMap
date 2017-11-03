@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "LocationViewController.h"
 
 
 @interface ViewController ()<BMKMapViewDelegate>
@@ -21,20 +22,23 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self initView];
+    //[self initView];
     
+    [self initLoacation];
 
 }
 
+// SDK  di
 -(void)initView{
-    //nav
+    //nav 地图切换
     UIButton *rightItemBtn=[UIButton buttonWithType:UIButtonTypeCustom];
     [rightItemBtn setTitle:@"切换" forState:UIControlStateNormal];
     [rightItemBtn setTitleColor:[UIColor colorWithRed:0/255.0 green:245/255.0 blue:255/255.0 alpha:1] forState:UIControlStateNormal];
     [rightItemBtn setFrame:CGRectMake(0, 0,60, 40)];
     [rightItemBtn addTarget:self action:@selector(changeMap:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *rightItem=[[UIBarButtonItem alloc]initWithCustomView:rightItemBtn];
-    self.navigationItem.rightBarButtonItem=rightItem;
+    self.navigationItem.rightBarButtonItem = rightItem;
+    
     
     //map
     BMKMapView* mapView = [[BMKMapView alloc]initWithFrame:CGRectMake(0, 0, screenW, screenH)];
@@ -42,9 +46,11 @@
     mapView.delegate=self;
     self.mapView = mapView;
     [self.view addSubview:self.mapView];
-    
-    //
-    
+  
+}
+
+// 地理编码
+-(void)initLoacation{
     
 }
 
@@ -62,6 +68,11 @@
         [_mapView setMapType:BMKMapTypeSatellite];
     }
 
+}
+
+-(void)diliClicked:(UIButton *)sender{
+    LocationViewController *locationVC = [[LocationViewController alloc] init];
+    [self.navigationController pushViewController:locationVC animated:YES];
 }
 
 
