@@ -10,11 +10,12 @@
 #import "LocationViewController.h"
 
 
-@interface ViewController ()<BMKMapViewDelegate>
+@interface ViewController ()<BMKMapViewDelegate,BMKBusLineSearchDelegate>
 
 @property (nonatomic ,strong) BMKMapView *mapView;
 @property (nonatomic ,assign) BOOL status;
 
+@property (nonatomic, strong) UIButton *locationBtn;
 @end
 
 @implementation ViewController
@@ -22,10 +23,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    //[self initView];
-    
-    [self initLoacation];
-
+    [self initView];
 }
 
 // SDK  di
@@ -46,13 +44,20 @@
     mapView.delegate=self;
     self.mapView = mapView;
     [self.view addSubview:self.mapView];
+    
+    UIButton *button = [[UIButton alloc] init];
+    button.backgroundColor = [UIColor greenColor];
+    [button setFrame:CGRectMake(80, 100, 80, 40)];
+    button.titleLabel.font = [UIFont systemFontOfSize:18];
+    [button setTitle:@"location" forState:UIControlStateNormal];
+    [button setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+    [button addTarget:self action:@selector(locationAction:) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:button];
+    self.locationBtn = button;
   
 }
 
-// 地理编码
--(void)initLoacation{
-    
-}
+
 
 -(void)createMap{
 
@@ -70,10 +75,15 @@
 
 }
 
--(void)diliClicked:(UIButton *)sender{
+-(void)locationAction:(UIButton *)sender{
     LocationViewController *locationVC = [[LocationViewController alloc] init];
     [self.navigationController pushViewController:locationVC animated:YES];
 }
+
+
+
+
+
 
 
 -(void)viewWillAppear:(BOOL)animated
@@ -90,6 +100,7 @@
     
     [self.mapView viewWillDisappear];
     _mapView.delegate = nil; // 不用时，置nil
+    
 }
 
 
