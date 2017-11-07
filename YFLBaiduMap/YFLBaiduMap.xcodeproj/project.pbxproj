@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A1EC6D41FB185A600F02887 /* BaiduPanoSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A1EC6D31FB185A500F02887 /* BaiduPanoSDK.framework */; };
+		3A3F56351FB15CC7004C8BAD /* Third3DShowController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3F56341FB15CC7004C8BAD /* Third3DShowController.m */; };
 		3A4ABBAB1FAC6BEC00469483 /* LocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A4ABBAA1FAC6BEC00469483 /* LocationViewController.m */; };
 		3A7D5A231DD3154700EA1FD6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D5A221DD3154700EA1FD6 /* main.m */; };
 		3A7D5A261DD3154700EA1FD6 /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 3A7D5A251DD3154700EA1FD6 /* AppDelegate.mm */; };
@@ -46,6 +48,9 @@
 
 /* Begin PBXFileReference section */
 		21ADE741D38DC5633272BBA0 /* libPods-YFLBaiduMap.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-YFLBaiduMap.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3A1EC6D31FB185A500F02887 /* BaiduPanoSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduPanoSDK.framework; sourceTree = "<group>"; };
+		3A3F56331FB15CC7004C8BAD /* Third3DShowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Third3DShowController.h; sourceTree = "<group>"; };
+		3A3F56341FB15CC7004C8BAD /* Third3DShowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Third3DShowController.m; sourceTree = "<group>"; };
 		3A4ABBA91FAC6BEC00469483 /* LocationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationViewController.h; sourceTree = "<group>"; };
 		3A4ABBAA1FAC6BEC00469483 /* LocationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationViewController.m; sourceTree = "<group>"; };
 		3A7D5A1E1DD3154700EA1FD6 /* YFLBaiduMap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YFLBaiduMap.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -84,6 +89,7 @@
 			files = (
 				3A7D5A651DD33CEB00EA1FD6 /* libstdc++.6.0.9.tbd in Frameworks */,
 				3A7D5A631DD33CD800EA1FD6 /* CoreTelephony.framework in Frameworks */,
+				3A1EC6D41FB185A600F02887 /* BaiduPanoSDK.framework in Frameworks */,
 				3A7D5A611DD33CC900EA1FD6 /* libsqlite3.0.tbd in Frameworks */,
 				3A7D5A5F1DD33CA800EA1FD6 /* Security.framework in Frameworks */,
 				3A7D5A5D1DD33C9D00EA1FD6 /* CoreGraphics.framework in Frameworks */,
@@ -115,6 +121,7 @@
 		3A7D5A151DD3154700EA1FD6 = {
 			isa = PBXGroup;
 			children = (
+				3A1EC6D31FB185A500F02887 /* BaiduPanoSDK.framework */,
 				3A7D5A661DD33E4900EA1FD6 /* mapapi.bundle */,
 				3A7D5A201DD3154700EA1FD6 /* YFLBaiduMap */,
 				3A7D5A3A1DD3154700EA1FD6 /* YFLBaiduMapTests */,
@@ -144,6 +151,8 @@
 				3A7D5A281DD3154700EA1FD6 /* ViewController.m */,
 				3A4ABBA91FAC6BEC00469483 /* LocationViewController.h */,
 				3A4ABBAA1FAC6BEC00469483 /* LocationViewController.m */,
+				3A3F56331FB15CC7004C8BAD /* Third3DShowController.h */,
+				3A3F56341FB15CC7004C8BAD /* Third3DShowController.m */,
 				3A7D5A2D1DD3154700EA1FD6 /* Assets.xcassets */,
 				3A7D5A321DD3154700EA1FD6 /* Info.plist */,
 				3A7D5A211DD3154700EA1FD6 /* Supporting Files */,
@@ -390,6 +399,7 @@
 			files = (
 				3A7D5A291DD3154700EA1FD6 /* ViewController.m in Sources */,
 				3A7D5A261DD3154700EA1FD6 /* AppDelegate.mm in Sources */,
+				3A3F56351FB15CC7004C8BAD /* Third3DShowController.m in Sources */,
 				3A7D5A231DD3154700EA1FD6 /* main.m in Sources */,
 				3A4ABBAB1FAC6BEC00469483 /* LocationViewController.m in Sources */,
 			);
@@ -526,6 +536,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KK5694975F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YFLBaiduMap",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YFLBaiduMap/PrefixHeader.pch";
 				INFOPLIST_FILE = YFLBaiduMap/Info.plist;
@@ -546,6 +561,11 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KK5694975F;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/YFLBaiduMap",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/YFLBaiduMap/PrefixHeader.pch";
 				INFOPLIST_FILE = YFLBaiduMap/Info.plist;
